@@ -22,7 +22,7 @@ jobs:
         cd build-wlan-ap
         ./build.sh ~
         cd ~/wlan-ap/openwrt
-        make -j$(expr $(nproc) + 1) V=s
+        make -j$(expr $(nproc) + 1)
         
     - name: Organize files
       id: organize
